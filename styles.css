@@ -137,12 +137,19 @@ body::after {
   display: flex;
   gap: 10px;
   margin-top: 12px;
+
+  overflow-x: auto;
+  padding: 0 12px;
+
+  justify-content: flex-start;
+  -webkit-overflow-scrolling: touch;
 }
 
 .main-nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
+  
 
   padding: 8px 12px;
   border-radius: 10px;
@@ -150,12 +157,22 @@ body::after {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: white;
+  
+  white-space: nowrap;
 }
+
+@media (min-width: 900px) {
+  .main-nav {
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
+
 
 /* Diferenciamos la experiencia */
 .experiencia-item {
   padding: 16px 18px;
-  margin-bottom: 18px;
+  margin-bottom: 58px;
 
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.10);
