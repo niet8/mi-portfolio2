@@ -139,7 +139,7 @@ body::after {
   margin-top: 12px;
 
   overflow-x: auto;
-  padding: 0 12px;
+  padding: 0 12px 6px;
 
   justify-content: flex-start;
   -webkit-overflow-scrolling: touch;
